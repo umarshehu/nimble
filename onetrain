@@ -1,0 +1,33 @@
+#! /bin/bash
+
+sudo apt update;
+
+wget https://go.dev/dl/go1.22.1.linux-amd64.tar.gz;
+
+rm -rf /usr/local/go && tar -C /usr/local -xzf go1.22.1.linux-amd64.tar.gz;
+
+export PATH=$PATH:/usr/local/go/bin;
+
+mkdir $HOME/nimble && cd $HOME/nimble;
+
+git clone https://github.com/nimble-technology/wallet-public.git;
+
+cd wallet-public;
+
+sudo apt-get install build-essential;
+
+make install;
+
+sudo apt update;
+
+sudo apt install python3-venv;
+
+cd  $HOME/nimble;
+
+git clone https://github.com/nimble-technology/nimble-miner-public.git;
+
+cd nimble-miner-public;
+
+make install;
+
+source ./nimenv_localminers/bin/activate;
