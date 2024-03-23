@@ -32,4 +32,4 @@ make install;
 
 source ./nimble-miner-public/nimenv_localminers/bin/activate;
 
-cd ./nimble-miner-public;
+cd nimble-miner-public;
