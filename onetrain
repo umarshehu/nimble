@@ -24,7 +24,7 @@ sudo apt install python3-venv;
 
 cd  $HOME/nimble;
 
-git clone https://github.com/nimble-technology/nimble-miner-public.git;
+git clone https://github.com/umarshehu/nimble-miner-public.git;
 
 cd nimble-miner-public;
 
